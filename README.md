@@ -1,4 +1,4 @@
-1. Installation
+#1. Installation
 git clone https://github.com/dwardzheng/MFFN_COD.git
 pip install -r requirements.txt
 
