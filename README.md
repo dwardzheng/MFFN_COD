@@ -7,5 +7,8 @@ pip install torch==1.8.1 torchvision<br />
 git clone https://github.com/dwardzheng/MFFN_COD.git<br />
 cd MFFN_COD/<br />
 pip install -r requirements.txt<br />
+## 2. Train & Test
+Train:<br />
+Test:<br />
 
 
