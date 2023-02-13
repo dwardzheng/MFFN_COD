@@ -1,5 +1,5 @@
-#1. Installation
-git clone https://github.com/dwardzheng/MFFN_COD.git
+# 1. Installation
+git clone https://github.com/dwardzheng/MFFN_COD.git'''
 pip install -r requirements.txt
 
 Our paper has been accepted by WCAV2023, you can download it at https://arxiv.org/abs/2210.06361.
