@@ -1,0 +1,88 @@
+{
+  "cod10k_camo_tr": {
+    "root": "/root/MFFN/data/COD/Train/COD10K_CAMO",
+    "image": {
+      "path": "Image",
+      "suffix": ".jpg"
+    },
+    "mask": {
+      "path": "Mask",
+      "suffix": ".png"
+    },
+    "edge": {
+      "path": "Edge",
+      "suffix": ".png"
+    }
+  },
+  "camo_te": {
+    "root": "/root/MFFN/data/COD/Test/CAMO",
+    "image": {
+      "path": "Image",
+      "suffix": ".jpg"
+    },
+    "mask": {
+      "path": "Mask",
+      "suffix": ".png"
+    },
+    "edge": {
+      "path": "Edge",
+      "suffix": ".png"
+    }
+  },
+  "chameleon": {
+    "root": "/root/MFFN/data/COD/Test/CHAMELEON",
+    "image": {
+      "path": "Image",
+      "suffix": ".jpg"
+    },
+    "mask": {
+      "path": "Mask",
+      "suffix": ".png"
+    },
+    "edge": {
+      "path": "Edge",
+      "suffix": ".png"
+    }
+  },
+  "cpd1k_te": {
+    "root": "/root/MFFN/data/COD/CPD/CPD1K-TE",
+    "image": {
+      "path": "Image",
+      "suffix": ".jpg"
+    },
+    "mask": {
+      "path": "Mask",
+      "suffix": ".png"
+    }
+  },
+  "cod10k_te": {
+    "root": "/root/MFFN/data/COD/Test/COD10K",
+    "image": {
+      "path": "Image",
+      "suffix": ".jpg"
+    },
+    "mask": {
+      "path": "Mask",
+      "suffix": ".png"
+    },
+    "edge": {
+      "path": "Edge",
+      "suffix": ".png"
+    }
+  },
+  "nc4k": {
+    "root": "/root/MFFN/data/COD/ClearnerNC4K",
+    "image": {
+      "path": "Imgs",
+      "suffix": ".jpg"
+    },
+    "mask": {
+      "path": "GT",
+      "suffix": ".png"
+    },
+    "instance": {
+      "path": "Instance",
+      "suffix": ".png"
+    }
+  }
+}
