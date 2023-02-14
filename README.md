@@ -28,13 +28,13 @@ pip install -r requirements.txt
 ### Training
 
 ```
-
+python main.py --model-name=MFFN --config=configs/MFFN/MFFN_R50.py --datasets-info ./configs/_base_/dataset/dataset_configs.json --info demo
 ```
 
 ### Evaluation
 
 ```
-
+./test.sh 0 
 ```
 
 ### Visualization
