@@ -14,7 +14,7 @@ from utils import builder, configurator, io, misc, ops, pipeline, recorder
 
 def parse_config():
     parser = argparse.ArgumentParser("Training and evaluation script")
-    parser.add_argument("--config", default="./configs/zoomnet/zoomnet.py", type=str)
+    parser.add_argument("--config", default="./configs/MFFN/MFFN_R50.py", type=str)
     parser.add_argument("--datasets-info", default="./configs/_base_/dataset/dataset_configs.json", type=str)
     parser.add_argument("--model-name", type=str)
     parser.add_argument("--batch-size", type=int)
