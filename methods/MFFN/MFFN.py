@@ -414,9 +414,9 @@ class MFFN(BasicModelClass):
 
     def test_forward(self, data, **kwargs):
         output = self.body(
-            l_scale=data["image_c1"],
+            c1_scale=data["image_c1"],
             o_scale=data["image_o"],
-            s_scale=data["image_c2"],
+            c2_scale=data["image_c2"],
             a1_scale=data["image_a1"],
             a2_scale=data["image_a2"],
         )
