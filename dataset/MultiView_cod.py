@@ -37,10 +37,10 @@ class MFFN_COD_TestDataset(_BaseSODDataset):
         base_w = self.base_shape["w"]
         image0 = ss_resize(image0, scale=1.0, base_h=base_h, base_w=base_w)
         image1 = ss_resize(image1, scale=1.0, base_h=base_h, base_w=base_w)
-        images = ms_resize(image, scales=(2.0, 1.0, 1.5), base_h=base_h, base_w=base_w)
-        image_0_5 = torch.from_numpy(images[0]).permute(2, 0, 1)
-        image_1_0 = torch.from_numpy(images[1]).permute(2, 0, 1)
-        image_1_5 = torch.from_numpy(images[2]).permute(2, 0, 1)
+        images = ms_resize(image, scales=(2.0, 1.0, 1.8), base_h=base_h, base_w=base_w)
+        image_c_1 = torch.from_numpy(images[0]).permute(2, 0, 1)
+        image_o = torch.from_numpy(images[1]).permute(2, 0, 1)
+        image_c_2 = torch.from_numpy(images[2]).permute(2, 0, 1)
         image_a_1 = torch.from_numpy(image0).permute(2, 0, 1)
         image_a_2 = torch.from_numpy(image1).permute(2, 0, 1)
 
@@ -94,7 +94,7 @@ class MFFN_COD_TrainDataset(_BaseSODDataset):
         mask = transformed["mask"]
         base_h = self.base_shape["h"]
         base_w = self.base_shape["w"]
-        images = ms_resize(image, scales=(2.0, 1.0, 1.5), base_h=base_h, base_w=base_w)
+        images = ms_resize(image, scales=(2.0, 1.0, 1.8), base_h=base_h, base_w=base_w)
         image0 = ss_resize(image0, scale=1.0, base_h=base_h, base_w=base_w)
         image1 = ss_resize(image1, scale=1.0, base_h=base_h, base_w=base_w)
 
@@ -103,7 +103,6 @@ class MFFN_COD_TrainDataset(_BaseSODDataset):
         image_c_2 = torch.from_numpy(images[2]).permute(2, 0, 1)
         image_a_1 = torch.from_numpy(image0).permute(2, 0, 1)
         image_a_2 = torch.from_numpy(image1).permute(2, 0, 1)
-
         mask = ss_resize(mask, scale=1.0, base_h=base_h, base_w=base_w)
         mask_1_0 = torch.from_numpy(mask).unsqueeze(0)
         return dict(
