@@ -35,6 +35,8 @@ python main.py --model-name=MFFN --config=configs/MFFN/MFFN_R50.py --datasets-in
 
 ```
 ./test.sh 0 
+prediction result(链接：https://pan.baidu.com/s/18Bn3NFw6ES0p7eqw3AldoA 
+提取码：mffn)
 ```
 
 ### Visualization
